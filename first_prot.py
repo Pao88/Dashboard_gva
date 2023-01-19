@@ -29,6 +29,7 @@ app = Dash(__name__)
 #server = flask.Flask(__name__)
 dbc_css = ("https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.2/dbc.min.css")
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc_css])
+server = app.server
 #app = Dash(__name__, server=server, external_stylesheets=[dbc.themes.ZEPHYR,dbc_css])
 #app.title = 'TVInteractions'
 
