@@ -25,6 +25,7 @@ df = pd.read_csv('dataset_dashboard.csv', delimiter=',')
 df =df[df['code']=='D']
 df['diff'] = df['0.75'] - df['0.25']
 app = Dash(__name__)
+server = app.server
 #server = flask.Flask(__name__)
 #dbc_css = ("https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.2/dbc.min.css")
 #app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, dbc_css])
